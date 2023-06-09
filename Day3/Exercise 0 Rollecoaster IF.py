@@ -6,12 +6,14 @@ if height >= 120:
   age = int(input("What is your age? "))
   if age < 12:
     bill = 5
-  elif age > 18:
+  elif age > 18 and age < 45:
     bill = 12
+  elif age >= 45 and age <=55:
+    bill = 0
   else:
     bill = 7
   wants_photo =input("Do you want a photo? ").lower()
-  if wants_photo == "yes":
+  if wants_photo == "yes" and bill != 0:
     bill += 3
   print(f"Your bill is ${bill}.")
 else:
