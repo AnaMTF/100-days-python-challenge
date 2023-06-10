@@ -20,6 +20,14 @@ position = input("Where do you want to put the treasure? ")
 
 map[(int(position)%10)-1][(int(position)//10)-1]='X'
 
+
+#how the instructor did it
+
+# horizontal = int(position[0])
+# hvertical = int(position[1])
+# selected_row = map[vertical - 1] 
+# selected_row[ horizontal -1] = 'X'
+
 #Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
