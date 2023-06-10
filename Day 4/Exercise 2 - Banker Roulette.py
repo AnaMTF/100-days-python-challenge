@@ -8,5 +8,5 @@ names = names_string.split(", ")
 #Write your code below this line 👇
 
 the_unlucky_one=names[random.randint(0, len(names)-1)]
-
+# the_unlucky_one = random.choice(names)
 print(f"{the_unlucky_one} is going to buy the meal today!")
