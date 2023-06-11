@@ -45,3 +45,43 @@ for index in range (0, sum_password):
             nr_numbers -=1
 print(password)
 #first try :D yay
+
+
+#how the instructor did it
+
+
+#Eazy Level
+password = ""
+
+for char in range(1, nr_letters + 1):
+  password += random.choice(letters)
+
+for char in range(1, nr_symbols + 1):
+  password += random.choice(symbols)
+
+for char in range(1, nr_numbers + 1):
+  password += random.choice(numbers)
+ 
+print(password)
+
+#Hard Level
+password_list = []
+
+for char in range(1, nr_letters + 1):
+  password_list.append(random.choice(letters))
+
+for char in range(1, nr_symbols + 1):
+  password_list += random.choice(symbols)
+
+for char in range(1, nr_numbers + 1):
+  password_list += random.choice(numbers)
+
+print(password_list)
+random.shuffle(password_list)
+print(password_list)
+
+password = ""
+for char in password_list:
+  password += char
+
+print(f"Your password is: {password}")
