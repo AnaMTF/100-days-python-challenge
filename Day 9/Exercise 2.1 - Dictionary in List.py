@@ -23,7 +23,6 @@ def add_new_country(country, nr_visits, cities):
     travel_log.append(new_country)
 
 
-
 #🚨 Do not change the code below
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
 print(travel_log)
