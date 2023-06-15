@@ -20,7 +20,7 @@ def encrypt (plain_text, shift):
 def decrypt (crypted_text, shift):
     decrypted_text = ""
     for letter in crypted_text:
-        if letter not in alphabet:
+        while letter not in alphabet:
             decrypted_text += letter
         else:
             old_position = alphabet.index(letter)
