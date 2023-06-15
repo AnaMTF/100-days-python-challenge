@@ -6,8 +6,8 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 def encrypt (plain_text, shift):
     cypher_text = ""
     for letter in plain_text:
-        if letter == " ":
-            cypher_text += " "
+        if letter not in alphabet:
+            cypher_text += letter
         else:
             old_position = alphabet.index(letter)
             new_position = old_position + shift
@@ -20,8 +20,8 @@ def encrypt (plain_text, shift):
 def decrypt (crypted_text, shift):
     decrypted_text = ""
     for letter in crypted_text:
-        if letter == " ":
-            decrypted_text += " "
+        if letter not in alphabet:
+            decrypted_text += letter
         else:
             old_position = alphabet.index(letter)
             new_position = old_position - shift
