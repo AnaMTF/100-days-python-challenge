@@ -8,7 +8,7 @@ capitals = {
 
 travel_log = {
     "France" : {"cities_visited": ["Paris", "Dijon", "Lille"], "total_visits": 12},
-    "Germanry" : {"cities_visited":["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
+    "Germany" : {"cities_visited":["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
 }
 
 print(travel_log)
