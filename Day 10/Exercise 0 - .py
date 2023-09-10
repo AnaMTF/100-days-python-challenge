@@ -1,0 +1,1 @@
+print("te iubesc Anamaria")
